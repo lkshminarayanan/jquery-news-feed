@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>News Feed</h1>
 	<div id="news"></div>
 	<br>
     <script src="http://code.jquery.com/jquery.js"></script>
@@ -14,10 +14,10 @@
 	//Plugin Usage
 	
 	var newsText = {
-		"News 1" : "link 1",
-		"News 2" : "link 2"
+		"News 1" : "http://www.iiitb.ac.in",
+		"News 2" : "http://google.com"
 	}
-	$('#news').addText({
+	$('#news').newsFeed({
 			newsData: newsText,
 			type:1
 	});
