@@ -2,7 +2,7 @@
 (function ($) {
     $.fn.newsFeed = function (options, callback) {
         var defaults = {
-            newsData: {"Error":"javascript:alert('Error! Please fill in newsData.');"},
+            newsData: {"Error":'javascript:alert("Error! Please fill in newsData.");'},
 			timeInterval: 5000, /*in seconds*/
             type: 1 /*1-fadeinfadeout*/
         };
