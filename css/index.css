@@ -1,0 +1,13 @@
+body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+}
+
+#dwload.affix {
+    position: fixed;
+    top: 0;
+}	  
+	  
+#ex11{
+	background-color: #eee;
+}
