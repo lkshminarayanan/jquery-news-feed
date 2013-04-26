@@ -3,7 +3,17 @@ body {
         padding-bottom: 40px;
 }
 
-#dwload.affix {
+#theBox{
+	border:2px solid #eee;
+	padding:10px 10px; 
+	border-radius:5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:10px
+}
+
+#product.affix {
     position: fixed;
     top: 0;
 }	  
