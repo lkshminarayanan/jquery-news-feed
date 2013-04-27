@@ -1,6 +1,6 @@
-body {
-        padding-top: 60px;
-        padding-bottom: 40px;
+body1 {
+   padding-top: 60px;
+   padding-bottom: 40px;
 }
 
 #theBox{
@@ -15,9 +15,13 @@ body {
 
 #product.affix {
     position: fixed;
-    top: 0;
+    top: 10;
 }	  
 	  
 #ex11{
 	background-color: #eee;
+}
+
+#code1{
+	display:none;
 }

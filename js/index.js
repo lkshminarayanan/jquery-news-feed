@@ -7,15 +7,22 @@ var newsText = {
 }
 
 $(document).ready(function () {
-	$('#product').affix({
-		offset: $('#product').position()
-	});
 	
 	$('#ex1').newsFeed({
 		newsData: newsText,
 		type:1
 	});
 	
-	$('#nav-wrapper').height($("#nav").height());
+	$('#product').width($("#product").width());
+	
+	$('#product').affix({
+		offset: $('#product').position() - 10
+	});
+	
+	$("#viewCode").click(function(e){
+		e.preventDefault();
+		$('#'+$(this).attr("href")).show();
+	
+	});
 	
 });
