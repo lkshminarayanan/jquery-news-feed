@@ -31,6 +31,8 @@
 			targetBlank: true /*Open in new Window or not*/
         };
         optionsWithDefaults = $.extend(defaults, options);
+        
+        optionsWithDefaults.timeInterval = (optionsWithDefaults.timeInterval<0)?5000:optionsWithDefaults.timeInterval;
 		
 		$.each(optionsWithDefaults.newsData, function (newsText, newsLink) {
 			newsArr.push({

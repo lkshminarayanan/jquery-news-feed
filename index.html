@@ -22,7 +22,7 @@
                         	<h2>jQuery.Newsfeed</h2>
 
                         <br>
-                        <p>A jQuery plugin for displaying newsfeeds in web pages.</p>
+                        <p align="justify">A jQuery plugin for displaying newsfeeds in web pages. <!--News items can be rendered in various available output styles.--></p>
                         <br>
                         <p><a id="dwload" href="https://github.com/lkshminarayanan/jquery-news-feed/raw/gh-pages/assets/jQuery.newsfeed.zip" class="btn btn-primary btn-large">Download Plugin</a>
                         </p>
@@ -31,13 +31,13 @@
                 <div class="span7">
                     <div class="hero-unit">
                         	<h3>Using the Plugin</h3>
-The plugin can be easily integrated with any web page in simple steps.
+The plugin can be easily integrated to any web page.
                         <br>
                         <br>	<pre>
-//1. include the file.
+//1. include the plugin file.
 &ltscript src="jquery.newsFeed.js"&gt&lt/script&gt
 
-//2. create a newsContent in JSON format.
+//2. Load a newsContent in JSON format.
 var newsContent = {
 	"News 1":"Link 1",
 	"News 2":"Link 2"
@@ -49,36 +49,40 @@ $('#divID').newsFeed({
 });
 
 			</pre>
-<br>Following options are available to tweak the effects.<br><br>
+<br>Following options are available to modify the outcome of the plugin.<br><br>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>Option</th>
                                     <th>Description</th>
                                     <th>Values</th>
+                                    <th>Default</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>type</td>
-                                    <td>The id of the Newsfeed model to be rendered(Check Examples).</td>
-                                    <td>1/2/3 (default 3)</td>
+                                    <td>The id of the Newsfeed model to be rendered(Refer examples).</td>
+                                    <td>1/2/3 </td>
+                                    <td>3</td>
                                 </tr>
                                 <tr>
                                     <td>timeInterval</td>
-                                    <td>Time to wait before changing to next news item.</td>
+                                    <td>Time to wait before changing to next news item(ms).</td>
                                     <td>>0</td>
+                                    <td>5000</td>
                                 </tr>
                                 <tr>
                                     <td>targetBlank</td>
                                     <td>Specifies whether to open the link in a new tab.</td>
                                     <td>true/false</td>
+                                    <td>true</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="hero-unit">
-                         <h3>Example 1</h3>
+                         <h3>The FadeIn/FadeOut : type 3</h3>
 
                         <p>
                             <div id="ex1"></div>
@@ -88,7 +92,8 @@ $('#divID').newsFeed({
                         <pre>
 //default model
 $('#divID').newsFeed({
-	newsData: newsContent
+	newsData: newsContent,
+	type:3 /*optional! This is the default vales*/
 });  
                         </pre>
                         </div>
@@ -97,15 +102,15 @@ $('#divID').newsFeed({
                     <div class="hero-unit">
                         	<h3>Example 2</h3>
 
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                        <p><a class="btn" href="#">View details &raquo;</a>
+                        <p></p>
+                        <p><a class="btn" id="viewCode" href="code2">View Code &raquo;</a>
                         </p>
                     </div>
                     <div class="hero-unit">
                          <h3>Type 3/Default</h3>
 
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                        <p><a class="btn" href="#">View details &raquo;</a>
+                        <p></p>
+                        <p><a class="btn" id="viewCode" href="code3">View Code &raquo;</a>
                         </p>
                     </div>
                 </div>
@@ -113,8 +118,7 @@ $('#divID').newsFeed({
             <!-- /row-fluid-->
         </div>
         <!-- /container -->
-        <!-- Le javascript==================================================- ->
-    <!-- Placed at the end of the document so the pages load faster -->
+        <!-- Le javascript -->
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.newsfeed.js"></script>
